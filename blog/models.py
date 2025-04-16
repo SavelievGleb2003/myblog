@@ -3,9 +3,13 @@ from django.conf import settings
 from django.utils import timezone
 from django.urls import reverse
 # Create your models here.
+
+
 class PublishManager(models.Manager):
     def get_queryset(self):
         return super().get_queryset().filter(status=Post.Status.PUBLISHED)
+
+
 class Post(models.Model):
     class Status(models.TextChoices):
         DRAFT = 'DF', 'Draft'
@@ -31,3 +35,20 @@ class Post(models.Model):
 
     def get_absolute_urls(self):
         return reverse('blog:post_detail', args=[self.publish.year, self.publish.month, self.publish.day, self.slog])
+
+
+class Comment(models.Model):
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comment')
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    active = models.BooleanField(default=True)
+
+    class META:
+        ordering =['created']
+        indexes = [models.Index(fields=['created'])]
+
+    def __str__(self):
+        return f'comment by {self.name} on {self.post}'
