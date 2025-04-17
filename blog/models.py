@@ -3,6 +3,7 @@ from django.conf import settings
 from django.utils import timezone
 from django.urls import reverse
 
+
 from taggit.managers import TaggableManager
 # Create your models here.
 
