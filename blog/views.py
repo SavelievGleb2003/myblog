@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import Http404
+from taggit.models import Tag
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Post, Comment
 from django.views.generic import ListView
@@ -16,8 +16,14 @@ class PostListView(ListView):
     template_name = 'blog/post/list.html'
 
 
-def post_list(request):
+def post_list(request, slug_tag=None):
     post_list = Post.published.all()
+    tag = None
+    if slug_tag:
+        tag = get_object_or_404(Tag, slug=slug_tag)
+
+        post_list = post_list.filter(tags__in=[tag])
+
     paginator = Paginator(post_list,3)
     page_list = request.GET.get('page', 1)
     try:
@@ -27,7 +33,7 @@ def post_list(request):
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
 
-    return render(request, 'blog/post/list.html', {'posts': posts})
+    return render(request, 'blog/post/list.html', {'posts': posts, 'tag':tag})
 
 
 def post_detail(request, year, month, day, post_):

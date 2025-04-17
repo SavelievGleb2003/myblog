@@ -2,6 +2,8 @@ from django.db import models
 from django.conf import settings
 from django.utils import timezone
 from django.urls import reverse
+
+from taggit.managers import TaggableManager
 # Create your models here.
 
 
@@ -11,6 +13,8 @@ class PublishManager(models.Manager):
 
 
 class Post(models.Model):
+
+    tags = TaggableManager()
     class Status(models.TextChoices):
         DRAFT = 'DF', 'Draft'
         PUBLISHED = 'PB', 'Published'
