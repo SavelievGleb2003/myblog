@@ -57,7 +57,7 @@ def post_share(request, post_id):
         if form.is_valid():
             cd = form.cleaned_data
             post_url = request.build_absolute_uri(
-                post.get_absolute_urls()
+                post.get_absolute_url()
             )
             subject = (
                 f"{cd['name']} ({cd['email']}) "

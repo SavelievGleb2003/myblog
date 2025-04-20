@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-%#wjt3mx!jro-#w%%lx!2(6cf=x($(17k@b2z#zw+#05re2%&f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+SITE_ID = 1
 ALLOWED_HOSTS = []
 
 # Email server configuration
@@ -42,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'taggit',
     'blog',
