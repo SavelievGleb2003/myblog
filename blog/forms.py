@@ -2,6 +2,10 @@ from django import forms
 from .models import Comment
 
 
+class SearchForm(forms.Form):
+    query = forms.CharField()
+
+
 class EmailPostForm(forms.Form):
     name = forms.CharField(max_length=20)
     email = forms.EmailField()

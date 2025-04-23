@@ -5,7 +5,9 @@ from .models import Post, Comment
 from django.views.generic import ListView
 from django.core.mail import send_mail
 from django.views.decorators.http import require_POST
-from .forms import EmailPostForm, CommentForm
+from .forms import EmailPostForm, CommentForm, SearchForm
+
+from django.contrib.postgres.search import TrigramSimilarity
 
 from django.db.models import Count
 # Create your views here.
@@ -48,6 +50,18 @@ def post_detail(request, year, month, day, post_):
     return render(request, 'blog/post/detail.html', {'post': post, 'form':form, 'comments':comments, 'similar_posts':similar_posts})
 
 
+def post_search(request):
+    form = SearchForm()
+    query = None
+    results = []
+
+    if 'query' in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            results = (Post.published.annotate(similarity=TrigramSimilarity('title',query)).filter(similarity__gt=0.1).order_by('-similarity'))
+    return render(request, 'blog/post/search.html', {'results': results, 'form': form, 'query': query})
+
 def post_share(request, post_id):
     post = get_object_or_404(Post, id=post_id, status=Post.Status.PUBLISHED)
     sent = False
@@ -80,6 +94,7 @@ def post_share(request, post_id):
         form = EmailPostForm()
 
     return render(request, 'blog/post/share.html', {'post': post,'form': form, 'sent': sent})
+
 
 @require_POST
 def post_comment(request, post_id):
