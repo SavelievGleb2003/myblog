@@ -95,3 +95,74 @@ input[type=submit] {
     font-size:12px;
     color:#666;
 }
+
+
+
+/*#script for novaget */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #103d5a;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.topnav a {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #103d5a;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Общие линии */
+.topnav a::before,
+.topnav a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  width: 1px;
+  transform: translateY(-50%) scaleY(0.3);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: transparent; /* по умолчанию */
+}
+
+/* Правая линия у всех */
+.topnav a::after {
+  right: 0;
+  background-color: #d96a43;
+}
+
+/* Левая линия — у всех, но активна только у первой */
+.topnav a::before {
+  left: -1px;
+  background-color: #d96a43;
+}
+
+
+
+/* Наведение — все линии растут */
+.topnav a:hover::after,
+.topnav a:hover::before {
+  transform: translateY(-50%) scaleY(1);
+  background-color: #d96a43;
+}
+
+/* Цвет фона при наведении */
+.topnav a:hover {
+  background-color: #d96a43;
+}
+
+
+
