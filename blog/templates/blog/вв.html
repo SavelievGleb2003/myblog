@@ -1,0 +1,30 @@
+<style>
+  .spinner {
+    width: 100px;
+    height: 100px;
+    background-color: #d96a43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0; /* квадрат */
+  }
+
+  .spinner img {
+    width: 100px;
+    height: 100px;
+    animation: spin 5s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+
+<div class="spinner">
+  <img src="logo_light.svg" alt="Иконка" />
+</div>

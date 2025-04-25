@@ -5,8 +5,14 @@ body {
 }
 
 a {
-    color:#00abff;
+    color: #d96a43;
     text-decoration:none;
+}
+
+a:hover {
+
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 h1 {
@@ -23,16 +29,40 @@ h2 {
 #content {
     float:left;
     width:60%;
+    margin-top: 60px;
     padding:0 0 0 30px;
+    color:#103d5a;
 }
 
+
 #sidebar {
+
+
+    background:#103d5a;
+
+    color: #fff;
+    min-height: 70vh;
+    position: fixed;
+    top: 40px; /* Adjust depending on your navbar height */
+    right: 0;
+    width: 300px; /* Or whatever fits your layout */
+    height: calc(100vh - 60px); /* Fill the screen height below the navbar */
+    overflow-y: auto; /* Make it scrollable if content overflows */
     float:right;
     width:30%;
     padding:10px;
-    background:#efefef;
-    height:100%;
+    background:#103d5a;
+
+    a {
+    color:#d96a43;
+    text-decoration:none;
+    }
+    a:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
 }
+
 
 p.date {
     color:#ccc;
@@ -98,14 +128,14 @@ input[type=submit] {
 
 
 
-/*#script for novaget */
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/*#script for nav*/
 
 .topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   overflow: hidden;
   background-color: #103d5a;
   display: flex;
