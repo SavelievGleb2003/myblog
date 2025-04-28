@@ -1,30 +1,528 @@
-<style>
-  .spinner {
-    width: 100px;
-    height: 100px;
-    background-color: #d96a43;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0; /* квадрат */
-  }
+<!DOCTYPE html>
+<html lang="uk" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <title>Південкабель</title>
+<meta name='robots' content='noindex, nofollow' />
+<link rel="alternate" href="https://yuzhcable.com.ua/ru/glavnaya/" hreflang="ru" />
+<link rel="alternate" href="https://yuzhcable.com.ua/" hreflang="uk" />
+<link rel="alternate" href="https://yuzhcable.com.ua/en/main/" hreflang="en" />
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//yuzhcable.com.ua' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/yuzhcable.com.ua\/wp-includes\/js\/wp-emoji-release.min.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
 
-  .spinner img {
-    width: 100px;
-    height: 100px;
-    animation: spin 5s linear infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
 </style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://yuzhcable.com.ua/wp-includes/css/dist/block-library/style.min.css?ver=7ec24f5d75e5fea0df9f17b9cf9c9416' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='menu-image-css' href='https://yuzhcable.com.ua/wp-content/plugins/menu-image/includes/css/menu-image.css?ver=3.11' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://yuzhcable.com.ua/wp-includes/css/dashicons.min.css?ver=7ec24f5d75e5fea0df9f17b9cf9c9416' type='text/css' media='all' />
+<link rel='stylesheet' id='yuzhkabel-style-css' href='https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/style.css?ver=7ec24f5d75e5fea0df9f17b9cf9c9416' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css' href='https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/css/main.css?ver=7ec24f5d75e5fea0df9f17b9cf9c9416' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css' href='https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/css/slick.css?ver=7ec24f5d75e5fea0df9f17b9cf9c9416' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css' href='https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/css/responsive.css?ver=7ec24f5d75e5fea0df9f17b9cf9c9416' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdreams-asl-basic-css' href='https://yuzhcable.com.ua/wp-content/plugins/ajax-search-lite/css/style.basic.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdreams-ajaxsearchlite-css' href='https://yuzhcable.com.ua/wp-content/plugins/ajax-search-lite/css/style-simple-red.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://yuzhcable.com.ua/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.css?ver=7ec24f5d75e5fea0df9f17b9cf9c9416' type='text/css' media='screen' />
+<script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.min.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="jquery-js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.4.1.min.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="migrate-js"></script>
+<script type="text/javascript" src="https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/js/slick.min.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="slick-js"></script>
+<script type="text/javascript" src="https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/js/jcf.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="jcf-js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/vivus/0.1.2/vivus.min.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="vivus-js"></script>
+<script type="text/javascript" src="https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/js/jcf.select.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="jcfselect-js"></script>
+<script type="text/javascript" src="https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/js/jquery.validate.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="jqueryvalidate-js"></script>
+<script type="text/javascript" src="https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/js/jcf.scrollable.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="jcfscrollable-js"></script>
+<script type="text/javascript" src="https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/js/scrolltrigger.min.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="scrolltrigger-js"></script>
+<script type="text/javascript" src="https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/js/main.js?ver=7ec24f5d75e5fea0df9f17b9cf9c9416" id="main-js"></script>
+<link rel="https://api.w.org/" href="https://yuzhcable.com.ua/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://yuzhcable.com.ua/wp-json/wp/v2/pages/19" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://yuzhcable.com.ua/xmlrpc.php?rsd" />
 
-<div class="spinner">
-  <img src="logo_light.svg" alt="Иконка" />
+<link rel="canonical" href="https://yuzhcable.com.ua/" />
+<link rel='shortlink' href='https://yuzhcable.com.ua/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://yuzhcable.com.ua/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyuzhcable.com.ua%2F" />
+                <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+                                <style type="text/css">
+                    <!--
+
+            @font-face {
+                font-family: 'aslsicons2';
+                src: url('https://yuzhcable.com.ua/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot');
+                src: url('https://yuzhcable.com.ua/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot?#iefix') format('embedded-opentype'),
+                     url('https://yuzhcable.com.ua/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff2') format('woff2'),
+                     url('https://yuzhcable.com.ua/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff') format('woff'),
+                     url('https://yuzhcable.com.ua/wp-content/plugins/ajax-search-lite/css/fonts/icons2.ttf') format('truetype'),
+                     url('https://yuzhcable.com.ua/wp-content/plugins/ajax-search-lite/css/fonts/icons2.svg#icons') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+            div[id*='ajaxsearchlite'].wpdreams_asl_container {
+                width: 100%;
+                margin: 0px 0px 0px 0px;
+            }
+            div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+                font-weight: bold;
+                color: #d9312b;
+                background-color: #eee;
+            }
+            div[id*='ajaxsearchliteres'].wpdreams_asl_results .results div.asl_image {
+                width: 70px;
+                height: 70px;
+            }
+                                -->
+                </style>
+                            <script type="text/javascript">
+                if ( typeof _ASL !== "undefined" && _ASL !== null && typeof _ASL.initialize !== "undefined" )
+                    _ASL.initialize();
+            </script>
+            <link rel="icon" href="https://yuzhcable.com.ua/wp-content/uploads/2019/04/ico.png" sizes="32x32" />
+<link rel="icon" href="https://yuzhcable.com.ua/wp-content/uploads/2019/04/ico.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://yuzhcable.com.ua/wp-content/uploads/2019/04/ico.png" />
+<meta name="msapplication-TileImage" content="https://yuzhcable.com.ua/wp-content/uploads/2019/04/ico.png" />
+</head>
+
+<body class="home page-template page-template-template-home page-template-template-home-php page page-id-19">
+<div class="bg-loader">
+    <span class="figure"></span>
 </div>
+<div class="wrapper">
+    <header id="header">
+        <nav class="header-top">
+            <div class="content-size">
+                <div class="btn-menu">
+                    <span class="line"></span>
+                </div>
+
+<form role="search" method="get" class="search-input-box" action="https://yuzhcable.com.ua/">
+    <input type="search" class="search-field search-input" placeholder="" value=""
+           name="s"/>
+    <div class="form-search-btn">
+        <button type="submit" class="search-submit"></button>
+    </div>
+</form>                <div class="scroll-box">
+                    <div class="menu-verxnee-menyu-ukr-s-produktami-container"><ul id="menu-verxnee-menyu-ukr-s-produktami" class=""><li id="menu-item-83056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83056"><a href="https://yuzhcable.com.ua/about-company-ukr/">Про компанію</a></li>
+<li id="menu-item-82767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82767"><a href="http://www.yuzhcable.info/">Продукція</a></li>
+<li id="menu-item-365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-365"><a href="https://yuzhcable.com.ua/certificates-ukr/">Сертифікати</a></li>
+<li id="menu-item-85897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85897"><a href="https://yuzhcable.com.ua/video-and-photo-ukr/">Відео та фото</a></li>
+<li id="menu-item-528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-528"><a href="https://yuzhcable.com.ua/downloads-ukr/">Завантаження</a></li>
+<li id="menu-item-82830" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82830"><a href="https://yuzhcable.com.ua/category/novini/">Новини</a></li>
+<li id="menu-item-82831" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-82831"><a href="https://yuzhcable.com.ua/portfolio-ukr/">Портфоліо</a></li>
+<li id="menu-item-363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-363"><a href="https://yuzhcable.com.ua/vacancies-ukr/">Вакансії</a></li>
+<li id="menu-item-364" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-364"><a href="https://yuzhcable.com.ua/partners-ukr/">Партнери</a></li>
+<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-367"><a href="https://yuzhcable.com.ua/contacts-ukr/">Контакти</a></li>
+<li id="menu-item-84830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-84830"><a href="https://www.facebook.com/yuzhcable/" class="menu-image-title-hide menu-image-not-hovered"><span class="menu-image-title-hide menu-image-title">facebook</span><img width="24" height="24" src="https://yuzhcable.com.ua/wp-content/uploads/2019/11/facebook-4-24.png" class="menu-image menu-image-title-hide" alt="" decoding="async" /></a></li>
+</ul></div>                </div>
+                <span class="search-btn"></span>
+                <div class="lang-list">
+                    <span>UK</span>
+                    <ul>
+                        	<li class="lang-item lang-item-6 lang-item-ru lang-item-first"><a  lang="ru-RU" hreflang="ru-RU" href="https://yuzhcable.com.ua/ru/glavnaya/">RU</a></li>
+	<li class="lang-item lang-item-13 lang-item-en"><a  lang="en-US" hreflang="en-US" href="https://yuzhcable.com.ua/en/main/">EN</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="header-middle">
+            <div class="content-size">
+                <figure class="logo">
+                    <a href="https://yuzhcable.com.ua/">
+                        <img src="https://yuzhcable.com.ua/wp-content/themes/yuzhkabel/img/logo-ru.svg" alt="Yuzhkabel"
+                             title="Yuzhkabel">                    </a>
+                    <!-- <span>виробництво кабелів і проводів</span> -->
+                </figure>
+                <div class="btn-menu">
+                    <span class="line"></span>
+                </div>
+                <ul class="nav-mob-header">
+                    <li class="tel-btn"></li>
+                    <li class="login-btn"></li>
+                    <li class="cart-btn"></li>
+                </ul>
+                <div class="info-left">
+                    <span class="title">Управління збуту і маркетингу</span>
+                    <ul>
+                        <li><span>Тел.:</span><a href="tel:+3806821558178.0016.30<br>[Viber,Telegram,WhatsApp]<br>forcallsfromUkraine">+38 (068) 215 58 17 (8.00 - 16.30)<br>[Viber, Telegram, WhatsApp]<br>for calls from Ukraine</a></li><li><span>Тел.:</span><a href="tel:+380577545215">+38 (057) 754 52 15</a></li><li><span>Тел.:</span><a href="tel:+380577545239">+38 (057) 754 52 39</a></li><li><span>E-mail:</span><a href="mailto:optic@yuzhcable.com.ua">optic@yuzhcable.com.ua</a></li><li><span>E-mail:</span><a href="mailto:market@yuzhcable.com.ua">market@yuzhcable.com.ua</a></li>
+                    </ul>
+
+                    <!--                     <a class="mark-link"
+                       href="https://yuzhcable.com.ua/contacts-ukr/">Всі контакти</a> -->
+                    <!-- <span class="btn-callback">Замовити дзвінок</span> -->
+                </div>
+               <div class="info-right">
+                    <span class="title">Управління зовнішньоекономічних зв'язків</span>
+
+                    <ul>
+                        <li><span>Тел.:</span><a href="tel:+380577545218">+38 (057) 754 52 18</a></li><li><span>E-mail:</span><a href="mailto:oves@yuzhcable.com.ua">oves@yuzhcable.com.ua</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+
+    <div class="triggers-trust">
+        <ul>
+                            <li>
+                    <div class="img">
+                        <svg version="1.1" id="mySVG1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 570.3 463.2"
+                             style="enable-background:new 0 0 570.3 463.2;" xml:space="preserve">
+                  <style type="text/css">
+                      .st0 {
+                          fill: none;
+                          stroke: #D96A43;
+                          stroke-width: 4;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st1 {
+                          fill: none;
+                          stroke: #969696;
+                          stroke-width: 4;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st2 {
+                          fill: none;
+                          stroke: #A3A3A3;
+                          stroke-width: 4;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st3 {
+                          fill: none;
+                          stroke: #969696;
+                          stroke-width: 2;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st4 {
+                          fill: #D96A43;
+                      }
+                  </style>
+                            <g>
+                                <path class="st0" d="M506.3,462c38.8-48.5,62-109.9,62-176.8C568.3,128.8,441.6,2,285.2,2S2,128.8,2,285.2
+
+                      C2,352.1,25.2,413.5,64,462"/>
+                            </g>
+                            <line class="st1" x1="352" y1="375.6" x2="352" y2="214.6"/>
+                            <line class="st1" x1="453.4" y1="147.9" x2="453.4" y2="375.6"/>
+                            <line class="st2" x1="338.6" y1="152.9" x2="338.6" y2="207.5"/>
+                            <line class="st2" x1="307.4" y1="152.9" x2="307.4" y2="207.5"/>
+                            <line class="st2" x1="276.3" y1="152.9" x2="276.3" y2="207.5"/>
+                            <line class="st2" x1="245.1" y1="152.9" x2="245.1" y2="207.5"/>
+                            <line class="st2" x1="213.9" y1="152.9" x2="213.9" y2="207.5"/>
+                            <line class="st2" x1="182.8" y1="152.9" x2="182.8" y2="207.5"/>
+                            <line class="st1" x1="121.8" y1="128.3" x2="176.4" y2="207.5"/>
+                            <path class="st1" d="M377.8,128.3"/>
+                            <path class="st3" d="M422,119.8"/>
+                            <polyline class="st1" points="352,207.5 352,166.6 453.4,147.9 453.5,171.9 484.9,119.8 "/>
+                            <rect x="149.6" y="207.5" class="st1" width="207.3" height="7.1"/>
+                            <g>
+                                <path class="st4" d="M149.2,179H145v10.9h-2.9v-23.7h2.9v10.2h4.2c0.7-6.1,5.3-10.6,11.7-10.6c7,0,11.8,5.3,11.8,12.2
+
+                      c0,7-4.8,12.2-11.8,12.2C154.2,190.3,149.6,185.5,149.2,179z M169.6,178.1c0-5.5-3.4-9.6-8.7-9.6c-5.3,0-8.7,4.1-8.7,9.6
+
+                      c0,5.5,3.4,9.6,8.7,9.6C166.2,187.7,169.6,183.6,169.6,178.1z"/>
+                                <path class="st4" d="M175,189.9l7.6-9.4l-7.6-7.8h3.4l7.4,7.6v-7.6h2.7v7.5l7.4-7.5h3.4l-7.6,7.8l7.7,9.4h-3.4l-6.2-7.7l-1.2,1.2
+
+                      v6.5h-2.7v-6.5l-1.2-1.2l-6.2,7.7H175z"/>
+                                <path class="st4"
+                                      d="M214.1,189.9l-6.2-7.7L205,185v4.9h-2.7v-17.1h2.7v9.1l9-9.1h3.4l-7.6,7.8l7.6,9.4H214.1z"/>
+                                <path class="st4" d="M231.3,189.9v-2c-1.4,1.6-3.4,2.4-5.7,2.4c-2.9,0-6-2-6-5.7c0-3.8,3.1-5.6,6-5.6c2.3,0,4.3,0.7,5.7,2.3v-3.1
+
+                      c0-2.3-1.8-3.6-4.3-3.6c-2.1,0-3.7,0.7-5.3,2.4l-1.2-1.8c1.8-1.9,4-2.8,6.8-2.8c3.6,0,6.6,1.6,6.6,5.8v11.8H231.3z M231.3,186.2
+
+                      V183c-1-1.4-2.8-2.1-4.7-2.1c-2.5,0-4.2,1.6-4.2,3.8c0,2.2,1.7,3.7,4.2,3.7C228.5,188.4,230.3,187.7,231.3,186.2z"/>
+                                <path class="st4" d="M238.3,180.5c0-8.3,3-11.8,9-12.6c3.8-0.6,4.8-1,4.8-1.7h2.6c0,2.8-3.8,3.5-6.7,3.9c-5.1,0.7-6.6,2.9-7.2,5.8
+
+                      c1.2-2,3.4-3.7,6.5-3.7c4.9,0,8,4.1,8,8.9c0,4.9-3.2,9-8.4,9C241.6,190.3,238.3,186.2,238.3,180.5z M252.5,181.2
+
+                      c0-3.4-2-6.6-5.7-6.6c-3.7,0-5.7,3.1-5.7,6.6c0,3.5,2.1,6.7,5.7,6.7C250.5,187.9,252.5,184.8,252.5,181.2z"/>
+                                <path class="st4" d="M258.8,181.3c0-5,3.5-9,8.4-9c5.2,0,8.2,4,8.2,9.2v0.7h-13.9c0.2,3.2,2.5,5.9,6.2,5.9c2,0,3.9-0.8,5.3-2.2
+
+                      l1.3,1.7c-1.7,1.7-4,2.6-6.8,2.6C262.4,190.3,258.8,186.6,258.8,181.3z M267.2,174.5c-3.7,0-5.5,3.1-5.6,5.7h11.2
+
+                      C272.8,177.7,271.1,174.5,267.2,174.5z"/>
+                                <path class="st4" d="M277.7,188.1c1.6,0,2.6-1.8,3.3-6.9l1.1-8.4H294v17.1h-2.7v-14.8h-6.9l-0.8,6.4c-0.8,6.4-2.6,8.8-5.9,8.8
+
+                      V188.1z"/>
+                                <path class="st4" d="M302,172.7v6.6h6.4c3.5,0,5.4,2.4,5.4,5.3c0,2.8-1.9,5.3-5.4,5.3h-9.1v-17.1H302z M302,181.7v5.8h6.1
+
+                      c1.9,0,2.9-1.2,2.9-2.9c0-1.7-1-2.9-2.9-2.9H302z"/>
+                            </g>
+                            <polyline class="st1" points="127.8,387.3 127.8,375.5 474.4,375.5 474.4,387.3 "/>
+                            <polyline class="st1" points="115.8,399 115.8,387.3 486.4,387.3 486.4,399 "/>
+                            <rect x="90.4" y="399" class="st1" width="421.3" height="11.8"/>
+                            <g>
+                                <path class="st4" d="M104.4,318.8v-42.4l-7.7,8.2l-2.5-2.7l10.6-11.2h3.7v48H104.4z"/>
+                                <path class="st4" d="M121.1,313.4l2.4-3c2.3,3.1,5.3,5.3,10.5,5.3c10.6,0,14.2-11,14.2-21.1c0-0.7,0-1.4,0-2.2
+
+                      c-2.1,3.3-7.6,8.1-14.1,8.1c-8.6,0-15.5-5-15.5-15.3c0-7.8,5.9-15.3,16.1-15.3c13,0,17.6,12,17.6,24.8c0,12.3-5.1,24.8-18.4,24.8
+
+                      C127.7,319.5,123.9,317,121.1,313.4z M147.9,288.6c-0.6-6.6-4-14.9-13-14.9c-8.2,0-12.1,6.3-12.1,11.5c0,7.8,5.2,11.6,12,11.6
+
+                      C140,296.8,145.1,293.4,147.9,288.6z"/>
+                                <path class="st4" d="M181.8,318.8v-13.1H159V302l21.3-31.3h5.5v31.2h7.1v3.7h-7.1v13.1H181.8z M181.8,274.8l-18.5,27.1h18.5V274.8z
+
+                      "/>
+                                <path class="st4" d="M197.8,311.6l2.8-2.4c2.7,3.8,7.3,6.7,13.5,6.7c7.4,0,12.1-3.9,12.1-10.2c0-6.9-5.7-9.7-12.9-9.7
+
+                      c-1.9,0-3.7,0-4.5,0.1v-3.9c0.7,0.1,2.5,0.1,4.5,0.1c6.3,0,12.2-2.7,12.2-9.1c0-6-5.3-9.3-11.5-9.3c-5.5,0-9.4,2.2-12.9,6.1
+
+                      l-2.6-2.6c3.4-4.1,8.7-7.3,15.7-7.3c8.4,0,15.5,4.5,15.5,12.7c0,7.3-6.2,10.5-10.3,11.2c4.2,0.4,11,4,11,12c0,7.9-6,13.8-16.2,13.8
+
+                      C206.3,319.6,200.5,315.9,197.8,311.6z"/>
+                            </g>
+                            <rect x="121.8" y="116.9" class="st1" width="256" height="11.3"/>
+                            <polygon class="st1" points="422,119.8 377.8,128.3 377.8,116.9 422,108.4 "/>
+                            <polyline class="st1" points="422,108.4 484.9,108.4 484.9,119.8 422,119.8 "/>
+                            <line class="st1" x1="155.7" y1="214.6" x2="155.7" y2="249.4"/>
+                            <line class="st1" x1="155.7" y1="340.8" x2="155.7" y2="375.6"/>
+                </svg>
+                    </div>
+                    <span>Працює з 1943 року</span>
+                </li>
+                            <li>
+                    <div class="img">
+                        <svg version="1.1" id="mySVG2" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-12 189.7 570.3 463.2"
+                             style="enable-background:new -12 189.7 570.3 463.2;" xml:space="preserve">
+                  <style type="text/css">
+                      .st0 {
+                          fill: none;
+                          stroke: #D96A43;
+                          stroke-width: 4;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st1 {
+                          fill: none;
+                          stroke: #969696;
+                          stroke-width: 4;
+                          stroke-linecap: round;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st2 {
+                          fill: #F56A3F;
+                      }
+                  </style>
+                            <g>
+                                <path class="st0" d="M501.7,652.9c38.8-48.5,62-109.9,62-176.8c0-156.4-126.7-283.2-283.1-283.2S-2.6,319.7-2.6,476.1
+
+                      c0,66.9,23.2,128.3,62,176.8"/>
+                            </g>
+                            <path class="st1"
+                                  d="M427.9,511.1c-19.2,63.3-78,109.4-147.6,109.4c-69.5,0-128.3-46-147.6-109.2"/>
+                            <path class="st1" d="M131.8,424.1C150.1,359.4,209.6,312,280.2,312s130.1,47.4,148.4,112.1"/>
+                            <path class="st1" d="M173.3,511.3c6.9,30.4,21.6,62.9,48,96.4c0,0,62.2-35.8,119.3,0"/>
+                            <path class="st1" d="M340.6,325.2c-57.2,35.8-119.3,0-119.3,0s-35.3,39.1-48.2,99"/>
+                            <path class="st1" d="M387.4,511.1c-6.8,30.4-21.6,63-48.1,96.6"/>
+                            <path class="st1" d="M339.3,325.2c0,0,35.3,39.1,48.2,99"/>
+                            <line class="st1" x1="280.5" y1="511.1" x2="280.5" y2="591.8"/>
+                            <line class="st1" x1="280.5" y1="341" x2="280.5" y2="424.1"/>
+                            <path class="st1" d="M227.7,511.3c2.7,29.8,10.5,59.1,26.7,84"/>
+                            <path class="st1" d="M254.5,337.5c0,0-14.4,37.2-22.5,86.6"/>
+                            <path class="st1" d="M335.5,511c-2.7,29.9-10.5,59.3-26.7,84.3"/>
+                            <path class="st1" d="M308.8,337.5c0,0,14.4,37.2,22.5,86.6"/>
+                            <g>
+                                <path class="st2" d="M114.1,499.5v-58.9h5v58.9H114.1z"/>
+                                <path class="st2" d="M130.5,491.2l3.3-3.8c3.8,4.4,10,8.6,18.4,8.6c12.1,0,15.5-6.7,15.5-11.7c0-17.3-35.3-8.3-35.3-28.9
+
+                      c0-9.6,8.7-15.7,19.3-15.7c8.8,0,15.4,3.1,20,8.3l-3.4,3.7c-4.2-5.1-10.2-7.4-16.9-7.4c-7.9,0-13.8,4.5-13.8,10.9
+
+                      c0,15.1,35.3,6.8,35.3,28.8c0,7.6-5,16.7-20.9,16.7C142.4,500.6,135,496.7,130.5,491.2z"/>
+                                <path class="st2" d="M182.9,470.1c0-17.2,11.3-30.5,28.6-30.5c17.2,0,28.6,13.3,28.6,30.5c0,17.2-11.4,30.5-28.6,30.5
+
+                      C194.2,500.6,182.9,487.3,182.9,470.1z M234.8,470.1c0-15-9.2-25.9-23.3-25.9c-14.3,0-23.3,10.9-23.3,25.9c0,14.8,9,25.9,23.3,25.9
+
+                      C225.7,496,234.8,484.9,234.8,470.1z"/>
+                                <path class="st2" d="M276.3,493l2.9-3.6c2.8,3.8,6.4,6.5,12.9,6.5c13,0,17.4-13.5,17.4-25.9c0-0.9,0-1.8,0-2.7
+
+                      c-2.6,4.1-9.4,9.9-17.3,9.9c-10.6,0-19-6.2-19-18.7c0-9.6,7.2-18.8,19.8-18.8c15.9,0,21.6,14.7,21.6,30.5
+
+                      c0,15.1-6.3,30.4-22.5,30.4C284.4,500.5,279.7,497.4,276.3,493z M309.1,462.5c-0.7-8-4.9-18.3-16-18.3c-10.1,0-14.8,7.8-14.8,14.1
+
+                      c0,9.6,6.4,14.2,14.8,14.2C299.5,472.6,305.8,468.4,309.1,462.5z"/>
+                                <path class="st2" d="M324.9,470.1c0-14,5.9-30.4,21.8-30.4c15.7,0,21.7,16.3,21.7,30.4c0,14-6,30.5-21.7,30.5
+
+                      C330.8,500.6,324.9,484,324.9,470.1z M363,470.1c0-12.2-4-25.8-16.3-25.8c-12.5,0-16.5,13.6-16.5,25.8c0,12.1,4.1,25.9,16.5,25.9
+
+                      C359,496,363,482.2,363,470.1z"/>
+                                <path class="st2" d="M378.6,470.1c0-14,5.9-30.4,21.8-30.4c15.7,0,21.7,16.3,21.7,30.4c0,14-6,30.5-21.7,30.5
+
+                      C384.5,500.6,378.6,484,378.6,470.1z M416.7,470.1c0-12.2-4-25.8-16.3-25.8c-12.5,0-16.5,13.6-16.5,25.8c0,12.1,4.1,25.9,16.5,25.9
+
+                      C412.7,496,416.7,482.2,416.7,470.1z"/>
+                                <path class="st2" d="M442,499.5v-52l-9.5,10.1l-3.1-3.3l13-13.7h4.6v58.9H442z"/>
+                            </g>
+                </svg>
+                    </div>
+                    <span>Сертифікація на відповідність вимогам міжнародного стандарту ISO 9001</span>
+                </li>
+                            <li>
+                    <div class="img">
+                        <svg version="1.1" id="mySVG3" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-4.6 190.9 570.3 463.2"
+                             style="enable-background:new -4.6 190.9 570.3 463.2;" xml:space="preserve">
+                  <style type="text/css">
+                      .st0 {
+                          fill: none;
+                          stroke: #D96A43;
+                          stroke-width: 4;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st1 {
+                          fill: none;
+                          stroke: #969696;
+                          stroke-width: 4;
+                          stroke-linecap: round;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st2 {
+                          fill: none;
+                          stroke: #969696;
+                          stroke-linecap: round;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st3 {
+                          fill: none;
+                          stroke: #D96A43;
+                          stroke-width: 4;
+                          stroke-linecap: round;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st4 {
+                          fill: #D96A43;
+                      }
+
+                      .st5 {
+                          font-family: 'ProximaNova-Light';
+                      }
+
+                      .st6 {
+                          font-size: 72px;
+                      }
+                  </style>
+                            <g>
+                                <path class="st0" d="M501.7,652.9c38.8-48.5,62-109.9,62-176.8c0-156.4-126.7-283.2-283.1-283.2S-2.6,319.7-2.6,476.1
+
+                      c0,66.9,23.2,128.3,62,176.8"/>
+                            </g>
+                            <line class="st1" x1="217.8" y1="594.2" x2="217.8" y2="620"/>
+                            <line class="st1" x1="217.8" y1="473.8" x2="217.8" y2="515.4"/>
+                            <line class="st1" x1="217.8" y1="620" x2="342.8" y2="620"/>
+                            <line class="st1" x1="342.8" y1="515.4" x2="342.8" y2="473.8"/>
+                            <line class="st1" x1="342.8" y1="620" x2="342.8" y2="594.2"/>
+                            <path class="st1" d="M304.5,282.1c0,5.7-10.9,10.3-24.3,10.3c-12.3,0-22.5-3.9-24.1-9c-0.1-0.4-0.2-0.9-0.2-1.4
+
+                    c0-5.7,10.9-10.3,24.3-10.3S304.5,276.4,304.5,282.1z"/>
+                            <path class="st2" d="M296.5,282.1c0,3.8-7.3,6.9-16.2,6.9c-8.2,0-15.1-2.6-16.1-6c-0.1-0.3-0.1-0.6-0.1-0.9c0-3.8,7.3-6.9,16.2-6.9
+
+                    C289.2,275.2,296.5,278.3,296.5,282.1z"/>
+                            <path class="st2" d="M293.2,282.1c0,3.1-5.8,5.5-13,5.5c-6.6,0-12-2.1-12.9-4.8c-0.1-0.2-0.1-0.5-0.1-0.7c0-3.1,5.8-5.5,13-5.5
+
+                    S293.2,279.1,293.2,282.1z"/>
+                            <path class="st2" d="M285.2,282.1c0,1.2-2.2,2.1-5,2.1c-2.5,0-4.6-0.8-4.9-1.8c0-0.1,0-0.2,0-0.3c0-1.2,2.2-2.1,5-2.1
+
+                    S285.2,281,285.2,282.1z"/>
+                            <line class="st3" x1="226.8" y1="460" x2="226.8" y2="469.6"/>
+                            <line class="st3" x1="333.7" y1="459.4" x2="333.7" y2="468.8"/>
+                            <line class="st1" x1="252.8" y1="314.2" x2="252.8" y2="343.4"/>
+                            <line class="st1" x1="307.7" y1="314.2" x2="307.7" y2="343.4"/>
+                            <line class="st1" x1="256" y1="282.1" x2="256" y2="314.2"/>
+                            <line class="st1" x1="304.5" y1="314.2" x2="304.5" y2="282.1"/>
+                            <path class="st3" d="M226.8,469.6c3.4,11.2,26.1,20.4,53.2,20.4c29.5,0,53.7-8.6,53.7-21.2"/>
+                            <path class="st3" d="M226.8,460C226.8,460,226.8,460,226.8,460c-5.7,4-9,8.7-9,13.8c0,1.2,0.2,2.3,0.5,3.5c4,13,30.2,23.1,62,23.1
+
+                    c34.5,0,62.5-11.9,62.5-26.6c0-5-3.3-9.7-9-13.8"/>
+                            <path class="st1" d="M252.8,324.3C252.8,324.3,252.8,324.3,252.8,324.3c-13.5,3.8-22.3,10.3-22.3,17.7c0,0.9,0.1,1.9,0.4,2.8
+
+                    c3.2,10.4,24.1,18.4,49.3,18.4c27.5,0,49.8-9.5,49.8-21.2c0-7.4-8.8-13.9-22.3-17.7"/>
+                            <path class="st1" d="M256,308.8C256,308.8,256,308.8,256,308.8c-2,1.6-3.2,3.5-3.2,5.5c0,0.5,0.1,1,0.2,1.5
+
+                    c1.8,5.7,13.3,10.2,27.2,10.2c15.2,0,27.5-5.2,27.5-11.7c0-2-1.2-3.8-3.2-5.5"/>
+                            <line class="st1" x1="230.9" y1="344.7" x2="230.9" y2="467.8"/>
+                            <line class="st1" x1="330" y1="341.9" x2="330" y2="467.8"/>
+                            <text transform="matrix(1 0 0 1 178.0503 579.2844)" class="st4 st5 st6">25 000</text>
+                            <path class="st3" d="M230.9,450.7c-2.7,2.7-4.1,5.7-4.1,8.8c0,1,0.2,2,0.5,3c3.4,11.2,25.9,19.8,53,19.8c29.5,0,53.5-10.2,53.5-22.8
+
+                    c0-3.1-1.1-5.9-3.7-8.6"/>
+                </svg>
+                    </div>
+                    <span>Більш 25 000 марко-розмірів виробів власного виробництва</span>
+                </li>
+                            <li>
+                    <div class="img">
+                        <svg version="1.1" id="mySVG4" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 570.3 463.2"
+                             style="enable-background:new 0 0 570.3 463.2;" xml:space="preserve">
+                  <style type="text/css">
+                      .st0 {
+                          fill: none;
+                          stroke: #D96A43;
+                          stroke-width: 4;
+                          stroke-miterlimit: 10;
+                      }
+
+                      .st1 {
+                          fill: none;
+                          stroke: #969696;
+                          stroke-width: 4;
+                          stroke-miterlimit: 10;
+                      }
+                  </style>
+                            <g>
+                                <path class="st0" d="M506.3,462.2c38.8-48.5,62-109.9,62-176.8C568.3,129,441.6,2.2,285.2,2.2S2,129,2,285.4
+
+                      c0,66.9,23.2,128.4,62,176.8"/>
+                            </g>
+                            <g>
+                                <polygon class="st0" points="252.9,225.3 285.9,123.2 319.9,225.3 285.6,259.9  "/>
+                                <polygon class="st1" points="251.9,303.2 284.9,405.3 318.9,303.2 284.6,268.6  "/>
+                                <polygon class="st1" points="325,232.8 427.2,265.8 325,299.8 290.5,265.5  "/>
+                                <polygon class="st1" points="245.3,231.5 143.2,264.5 245.3,298.5 279.9,264.2  "/>
+                            </g>
+                </svg>
+                    </div>
+                    <span>Продукція заводу удостоєна нагороди за якість "Міжнародна Золота Зірка"</span>
+                </li>
+                    </ul>
+        <div class="figure-line"></div>
+    </div>
+    </div>
+  </div>

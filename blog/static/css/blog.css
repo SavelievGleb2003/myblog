@@ -17,8 +17,34 @@ a:hover {
 
 h1 {
     font-weight:normal;
-    border-bottom:1px solid #bbb;
-    padding:0 0 10px 0;
+    display: inline-block;
+
+
+}
+
+.header-wrapper {
+
+    width: 90%;
+    border-bottom: 1px solid #d96a43;
+    padding: 0px 0px;
+    h1 {
+        position: relative;
+        margin-bottom: 2px;
+        left: 15px;
+
+    }
+
+}
+.header-wrapper:after {
+  border: 1px solid #d96a43;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  position: absolute;
+  right: -7px;
+  bottom: -5px;
+  content: "";
+
 }
 
 h2 {
@@ -120,13 +146,6 @@ input[type=submit] {
 .comment:nth-child(even) {
     background:#efefef;
 }
-.comment .info {
-    font-weight:bold;
-    font-size:12px;
-    color:#666;
-}
-
-
 
 /*#script for nav*/
 
@@ -140,19 +159,20 @@ input[type=submit] {
   background-color: #103d5a;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 7px 20px;
 }
 
 .topnav a {
   position: relative;
   color: #fff;
   text-align: center;
-  padding: 14px 20px;
+  padding: 17px 20px;
   text-decoration: none;
   font-size: 17px;
-  background-color: #103d5a;
+
   transition: background-color 0.3s ease-in-out;
 }
+
 
 /* Общие линии */
 .topnav a::before,
@@ -162,12 +182,18 @@ input[type=submit] {
   top: 50%;
   height: 100%;
   width: 1px;
-  transform: translateY(-50%) scaleY(0.3);
+  transform: translateY(-50%) scaleY(0.25);
   transform-origin: center;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
   background-color: transparent; /* по умолчанию */
 }
+#menu-item-84830 a::before,
+#menu-item-84830 a::after {
 
+  top: 39%;
+  height: 100%;
+
+}
 /* Правая линия у всех */
 .topnav a::after {
   right: 0;
@@ -194,5 +220,170 @@ input[type=submit] {
   background-color: #d96a43;
 }
 
+.topnav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display list items in one line */
+  flex-wrap: wrap; /* Optional: wrap to new line if too many */
+  align-items: center; /* Center align vertically */
+}
 
 
+
+.topnav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set text color */
+  font-size: 14px; /* Adjust font size if needed */
+}
+
+/* Optional: Hover effect */
+.topnav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*#script for spinner*/
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    background-color: #d96a43;
+
+
+    border-radius: 0;
+    margin-bottom: -12px; /* <<< add this to push it closer */
+}
+
+
+
+.spinner img {
+    width: 50px;
+    height: 50px;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+/* */
+
+.header-middle {
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+  padding: 20px 0;
+  border-top: 1px solid #c0c0c0;
+  z-index: 1002;
+}
+
+.content-size {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+.btn-menu {
+  display: none; /* hidden in desktop view */
+}
+
+.nav-mob-header {
+  display: none; /* hidden in desktop view */
+}
+
+.info-left, .info-right {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.info-left {
+  border-right: 1px solid #ccc;
+  padding-right: 30px;
+}
+
+.title {
+  display: block;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.info-left ul, .info-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-left ul li, .info-right ul li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.info-left ul li span, .info-right ul li span {
+  color: #e36c31;
+  font-weight: bold;
+}
+
+.info-left ul li a, .info-right ul li a {
+  color: #003366;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.info-left ul li a:hover, .info-right ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .content-size {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-left, .info-right {
+    margin: 20px 0;
+    border: none;
+    padding: 0;
+  }
+  .btn-menu {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+  .nav-mob-header {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    flex-direction: column;
+  }
+}

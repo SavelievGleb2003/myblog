@@ -1,9 +1,15 @@
 {% extends "blog/base.html" %}
 {% load blog_tags %}
 {% block title %}My Blog{% endblock %}
-
+{% load static %}
 {% block content %}
-  <h1>My Blog</h1>
+  <div class="header-wrapper">
+      <div class="spinner">
+          <img src="{% static 'logo_light.svg' %}" alt="Иконка">
+      </div>
+      <h1>My Blog</h1>
+  </div>
+
 
     {% if tag %}
         <h2>Posts tagged with "{{ tag.name }}"</h2>
