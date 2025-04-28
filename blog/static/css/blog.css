@@ -55,7 +55,7 @@ h2 {
 #content {
     float:left;
     width:60%;
-    margin-top: 60px;
+    margin-top: 150px;
     padding:0 0 0 30px;
     color:#103d5a;
 }
@@ -71,13 +71,12 @@ h2 {
     position: fixed;
     top: 40px; /* Adjust depending on your navbar height */
     right: 0;
-    width: 300px; /* Or whatever fits your layout */
+    width: 19.5%; /* Or whatever fits your layout */
     height: calc(100vh - 60px); /* Fill the screen height below the navbar */
     overflow-y: auto; /* Make it scrollable if content overflows */
     float:right;
-    width:30%;
+
     padding:10px;
-    background:#103d5a;
 
     a {
     color:#d96a43;
@@ -154,6 +153,7 @@ input[type=submit] {
   top: 0;
   left: 0;
   width: 100%;
+  height: 33px;
   z-index: 1000;
   overflow: hidden;
   background-color: #103d5a;
@@ -166,7 +166,7 @@ input[type=submit] {
   position: relative;
   color: #fff;
   text-align: center;
-  padding: 17px 20px;
+  padding: 22px 20px;
   text-decoration: none;
   font-size: 17px;
 
@@ -179,7 +179,7 @@ input[type=submit] {
 .topnav a::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 39%;
   height: 100%;
   width: 1px;
   transform: translateY(-50%) scaleY(0.25);
@@ -187,15 +187,10 @@ input[type=submit] {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
   background-color: transparent; /* по умолчанию */
 }
-#menu-item-84830 a::before,
-#menu-item-84830 a::after {
 
-  top: 39%;
-  height: 100%;
-
-}
 /* Правая линия у всех */
 .topnav a::after {
+
   right: 0;
   background-color: #d96a43;
 }
@@ -286,8 +281,12 @@ input[type=submit] {
 /* */
 
 .header-middle {
+  position: fixed;
+  top: 39px;
+  width: 79%;
+
   background: linear-gradient(to right, #f8f8f8, #ffffff);
-  padding: 20px 0;
+
   border-top: 1px solid #c0c0c0;
   z-index: 1002;
 }
@@ -387,3 +386,16 @@ input[type=submit] {
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
